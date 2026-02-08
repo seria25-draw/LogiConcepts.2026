@@ -1,0 +1,1 @@
+# LogiConcepts.2026
