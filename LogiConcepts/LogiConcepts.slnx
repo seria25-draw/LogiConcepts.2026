@@ -2,5 +2,8 @@
   <Folder Name="/01/">
     <Project Path="EsParOrNot/EsParOrNot.csproj" />
   </Folder>
+  <Folder Name="/02/">
+    <Project Path="NumeroMayor/NumeroMayor.csproj" Id="071af967-eccd-4bd5-af70-517e7bf5e189" />
+  </Folder>
   <Project Path="Shared/Shared.csproj" Id="bc74ae71-4b02-4778-8ebb-4ea521ed6d9b" />
 </Solution>
