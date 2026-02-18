@@ -14,5 +14,8 @@
   <Folder Name="/05/">
     <Project Path="YearsBisiestos/YearsBisiestos.csproj" Id="ff6980db-c683-414b-bb43-a5ccbf2b5d17" />
   </Folder>
+  <Folder Name="/06/">
+    <Project Path="NominaSencilla/NominaSencilla.csproj" Id="fc2cdaed-3a56-4f41-9ff6-3d8a75549ca7" />
+  </Folder>
   <Project Path="Shared/Shared.csproj" Id="bc74ae71-4b02-4778-8ebb-4ea521ed6d9b" />
 </Solution>
