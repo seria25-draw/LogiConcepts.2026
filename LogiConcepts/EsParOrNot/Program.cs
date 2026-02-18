@@ -1,29 +1,44 @@
 ﻿// See https://aka.ms/new-console-template for more information
-var numberString = string.Empty;
+using Shared;
+
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
+
+//var numberString = string.Empty;
 do
 {
-    Console.WriteLine("Ingrese un número entero o la palabra 'Salir' para salir: ");
-    numberString = Console.ReadLine(); // number = "45" 
-    if (numberString!.ToLower() == "salir")
-    {
-        continue;
-    }
-    var numberInt = 0; 
-    if (int.TryParse(numberString, out numberInt))
-    {
-        if (numberInt % 2 == 0)
+    //Console.WriteLine("Ingrese un número entero o la palabra 'Salir' para salir: ");
+    //numberString = Console.ReadLine(); // number = "45" 
+    //if (numberString!.ToLower() == "salir")
+    //{
+    //    continue;
+    //}
+    var number = ConsoleExtension.GetInt("Ingrese un número entero diferente de cero: ");
+    //var numberInt = 0; 
+    //if (int.TryParse(numberString, out numberInt))
+    //{
+        if (number == 0)
         {
-            Console.WriteLine($"El número {numberInt} es par.");
+            continue;
+        }
+        if (number % 2 == 0)
+        {
+            Console.WriteLine($"El número {number} es par.");
         }
         else
         {
-            Console.WriteLine($"El número {numberInt} es impar.");
+            Console.WriteLine($"El número {number} es impar.");
         }
-    }
-    else
-    {
-        Console.WriteLine($"Lo que ingresaste: {numberString}, no es un número entero.");
-    }  
-} while (numberString!.ToLower() != "salir");
+
+        do
+        {
+        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [s]í, [n]o?: ", options);
+        }while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+    //}
+    //else
+    //{
+    //    Console.WriteLine($"Lo que ingresaste: {numberString}, no es un número entero.");
+    //}  
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
 
 Console.WriteLine("Game over :( ");
