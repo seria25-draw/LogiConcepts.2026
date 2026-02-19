@@ -37,12 +37,6 @@ do
         esLunes = ConsoleExtension.GetValidOptions("Es lunes [S]í [N]o:", options)!;
     } while (!options.Any(x => x.Equals(esLunes, StringComparison.CurrentCultureIgnoreCase)));
 
-    var metodoPag = new List<string> { "e", "t" };
-    string metodoPag;
-    do
-    {
-        metodoPag = ConsoleExtension.GetValidOptions("Tipo de pago [E]fectivo [T]arjeta: ", metodoPag)!;
-    } while (!options.Any(x => x.Equals(metodoPag, StringComparison.CurrentCultureIgnoreCase)));
 
     var valorTarif = CalculateValorTarif(pesoMer);
     var desc = CalculateDes(valorTarif, valorDes);
