@@ -23,5 +23,8 @@
   <Folder Name="/08/">
     <Project Path="Valor_matricula/Valor_matricula.csproj" Id="716b39b8-9a7a-426c-9255-8777b7a9182d" />
   </Folder>
+  <Folder Name="/09/">
+    <Project Path="EnviosMercancias/EnviosMercancias.csproj" Id="1735ea0d-96c0-45ac-9e4a-eb97f8879316" />
+  </Folder>
   <Project Path="Shared/Shared.csproj" Id="bc74ae71-4b02-4778-8ebb-4ea521ed6d9b" />
 </Solution>
