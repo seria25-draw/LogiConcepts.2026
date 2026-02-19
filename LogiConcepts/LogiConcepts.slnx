@@ -17,5 +17,8 @@
   <Folder Name="/06/">
     <Project Path="NominaSencilla/NominaSencilla.csproj" Id="fc2cdaed-3a56-4f41-9ff6-3d8a75549ca7" />
   </Folder>
+  <Folder Name="/07/">
+    <Project Path="Descuentos/Descuentos.csproj" Id="00e5145d-3a16-40b5-bf26-27db475268f0" />
+  </Folder>
   <Project Path="Shared/Shared.csproj" Id="bc74ae71-4b02-4778-8ebb-4ea521ed6d9b" />
 </Solution>
